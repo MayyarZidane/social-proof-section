@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+  --main-border-radius: 5px;
+  --main-margin-bottom: 15px
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 0.9375rem;
+}
+
+.social-proof-section {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .social-proof-section {
+    padding: 100px 150px;
+  }
+
+}
+
+.social-proof-section>div:not(:last-child) {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .social-proof-section .social-proof-text {
+    width: 500px;
+  }
+}
+
+.social-proof-section .social-proof-text h1 {
+  color: var(--very-dark-magenta);
+  padding: 0px 35px;
+  line-height: 0.8;
+}
+
+@media (min-width: 768px) {
+  .social-proof-section .social-proof-text h1 {
+    margin: 0px;
+    padding: 0px 120px 0px 0px;
+    font-size: 50px;
+    text-align: left;
+  }
+}
+
+.social-proof-section .social-proof-text p {
+  color: var(--dark-grayish-magenta);
+  padding: 0px 30px;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .social-proof-section .social-proof-text p {
+    padding: 0px 35px 0px 0px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) {
+  .social-proof-section .social-proof-rating {
+    margin: auto;
+  }
+}
+
+.social-proof-section .social-proof-rating .rate {
+  padding: 15px;
+  background-color: var(--light-grayish-magenta);
+  border-radius: var(--main-border-radius);
+}
+
+.social-proof-section .social-proof-rating .rate:not(:last-child) {
+  margin-bottom: var(--main-margin-bottom);
+}
+
+.social-proof-section .social-proof-rating .rate {
+  margin: auto;
+  padding: 20px 65px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .social-proof-section .social-proof-rating .rate:nth-child(2) {
+    transform: translateX(50px);
+  }
+
+  .social-proof-section .social-proof-rating .rate:nth-child(3) {
+    transform: translateX(100px);
+  }
+
+}
+
+.social-proof-section .social-proof-rating .rate img {
+  margin-right: 5px;
+
+}
+
+.social-proof-section .rate .stars {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .social-proof-section .rate .stars {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+.social-proof-section .rate span {
+  font-weight: bold;
+  color: var(--very-dark-magenta);
+}
+
+@media (min-width: 768px) {
+  .social-proof-section .rate span {
+    font-size: 1.125rem;
+  }
+}
+
+.social-proof-section .buyers-opinion {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 30px;
+}
+
+.social-proof-section .buyer-opinion {
+  background-color: var(--very-dark-magenta);
+  padding: 20px 35px;
+  border-radius: var(--main-border-radius);
+  height: fit-content;
+}
+
+@media (min-width: 768px) {
+  .social-proof-section .buyer-opinion {
+    padding: 35px;
+  }
+
+  .social-proof-section .buyer-opinion:nth-child(2) {
+    transform: translateY(20px);
+  }
+
+  .social-proof-section .buyer-opinion:nth-child(3) {
+    transform: translateY(40px);
+  }
+}
+
+.social-proof-section .buyer-opinion:not(:last-of-type) {
+  margin-bottom: var(--main-margin-bottom);
+}
+
+.social-proof-section .buyer-opinion .buyer-info {
+  display: flex;
+  align-items: center;
+}
+
+.social-proof-section .buyer-info img {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.social-proof-section .buyer-personal-info h2 {
+  color: var(--white);
+  font-size: 17px;
+  margin: 0px;
+}
+
+.social-proof-section .buyer-personal-info span {
+  color: var(--soft-pink);
+}
+
+.social-proof-section .buyer-opinion p {
+  color: var(--white);
+  padding-right: 25px;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .social-proof-section .buyer-opinion p {
+    padding: 0px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+}
